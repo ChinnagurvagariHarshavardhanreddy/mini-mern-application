@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form-wrapper {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-wrapper h1 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="number"],
+.form-wrapper textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-wrapper input[type="text"]:focus,
+.form-wrapper input[type="number"]:focus,
+.form-wrapper textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+}
+
+.form-wrapper textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-wrapper input[type="button"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.form-wrapper input[type="button"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.form-wrapper input[type="button"]:active {
+  transform: translateY(0);
+}
